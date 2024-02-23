@@ -1,0 +1,285 @@
+/* Global Styles */
+body {
+    background-color: #111;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 0; /* Hilangkan margin default */
+    padding: 0; /* Hilangkan padding default */
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between; /* Menambahkan spasi antara about-gambar dan about-teks */
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-gambar {
+    flex: 1;
+    padding-left: 20px; /* Menggeser gambar ke kanan */
+    height: 100%; /* Sesuaikan tinggi dengan parentnya */
+}
+
+.about-teks {
+    flex: 1;
+    color: #fff;
+    position: relative;
+}
+
+.about-gambar img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-teks h1,
+.about-teks h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(255,255,255,0.7), 0 0 10px rgba(255,255,255,0.5);
+}
+
+.about-teks p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 0 5px rgba(255,255,255,0.7), 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Features Section */
+.features-section,
+.style-section,
+.order-section,
+.testimoni-section {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.features-section h2,
+.style-section h2,
+.order-section h2,
+.testimoni-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.features-section ul,
+.style-section p {
+    list-style: none;
+    padding: 0;
+}
+
+.features-section li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.features-section li::before {
+    content: '\2022';
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.features-section li:last-child {
+    margin-bottom: 0;
+}
+
+.features-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Section */
+.testimoni-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimoni-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.testimoni-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimoni-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.testimoni-text span {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.testimoni-card::before,
+.testimoni-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: -1;
+}
+
+/* Style Section */
+.style-section .style-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    height: 400px; /* Tinggi yang sama */
+}
+
+.style-section .style-images img {
+    height: 100%; /* Memenuhi tinggi parent */
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.style-section .style-images img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Order Section */
+.order-section button {
+    background-color: #ffcc00;
+    color: #444;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-section button:hover {
+    background-color: #ff9900;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Testimonial Section */
+.testimoni-card::before,
+.testimoni-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: -1;
+}
+
+.testimoni-card::before {
+    z-index: -2; /* Memastikan gradient di bawah gambar */
+}
+
+.testimoni-card::after {
+    z-index: -1; /* Memastikan gradient di atas gambar */
+}
+
+.testimoni-card::before,
+.testimoni-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Testimonial Hover Effect */
+.testimoni-card:hover::before,
+.testimoni-card:hover::after {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
