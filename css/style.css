@@ -1,10 +1,9 @@
-/* Global Styles */
 body {
     background-color: #111;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
-    margin: 0; /* Hilangkan margin default */
-    padding: 0; /* Hilangkan padding default */
+    margin: 0; 
+    padding: 0; 
 }
 
 /* Header Styles */
@@ -26,7 +25,7 @@ header .container {
 }
 
 .logo img {
-    height: 50px;
+    height:40px;
     padding-left: 10px;
 }
 
@@ -65,7 +64,7 @@ nav ul li a:hover {
 
 .about-content {
     display: flex;
-    justify-content: space-between; /* Menambahkan spasi antara about-gambar dan about-teks */
+    justify-content: space-between; 
     align-items: center;
     max-width: 1200px;
     width: 100%;
@@ -73,8 +72,8 @@ nav ul li a:hover {
 
 .about-gambar {
     flex: 1;
-    padding-left: 20px; /* Menggeser gambar ke kanan */
-    height: 100%; /* Sesuaikan tinggi dengan parentnya */
+    padding-left: 20px; 
+    height: 100%; 
 }
 
 .about-teks {
@@ -111,9 +110,14 @@ nav ul li a:hover {
 .style-section,
 .order-section,
 .testimoni-section {
-    padding: 50px 0;
+    padding: 100px 0;
     text-align: center;
     color: #fff;
+}
+
+.features-section {
+    overflow: hidden; 
+    position: relative; 
 }
 
 .features-section h2,
@@ -124,37 +128,46 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.features-section ul,
-.style-section p {
-    list-style: none;
-    padding: 0;
+.features-carousel {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    position: relative; 
+
 }
 
-.features-section li {
-    margin-bottom: 20px;
-    position: relative;
+.carousel-slide {
+    flex: 0 0 calc(100% / 3); 
+    height: auto; 
+    overflow: hidden; 
+    transition: transform 0.5s ease; 
 }
 
-.features-section li::before {
-    content: '\2022';
-    color: #fff;
-    font-size: 20px;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+.carousel-slide img {
+    width: 100%; 
+    transition: transform 0.5s ease; 
+}
+
+/* Button Styles */
+.next-slide,
+.prev-slide {
     position: absolute;
-    left: -30px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 24px; 
+    color: #fff; 
+    z-index: 1; 
 }
 
-.features-section li:last-child {
-    margin-bottom: 0;
+.next-slide {
+    right: 10px; 
 }
 
-.features-section p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.prev-slide {
+    left: 10px; 
 }
 
 /* Testimonial Section */
@@ -203,20 +216,19 @@ nav ul li a:hover {
 
 /* Style Section */
 .style-section .style-images {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Menetapkan jumlah dan lebar kolom yang fleksibel */
+    grid-auto-rows: minmax(200px, auto); /* Menetapkan tinggi minimum dan maksimum untuk baris */
+    grid-gap: 20px; /* Jarak antar item */
     margin-top: 30px;
-    height: 400px; /* Tinggi yang sama */
 }
 
 .style-section .style-images img {
-    height: 100%; /* Memenuhi tinggi parent */
-    width: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
+    width: 100%; /* Mengisi lebar item */
+    height: 100%; /* Mengisi tinggi item */
+    object-fit: cover; /* Memastikan gambar mengisi seluruh area tanpa merubah aspek rasio */
 }
+
 
 .style-section .style-images img:hover {
     transform: scale(1.05);
@@ -260,11 +272,11 @@ nav ul li a:hover {
 }
 
 .testimoni-card::before {
-    z-index: -2; /* Memastikan gradient di bawah gambar */
+    z-index: -2;
 }
 
 .testimoni-card::after {
-    z-index: -1; /* Memastikan gradient di atas gambar */
+    z-index: -1;
 }
 
 .testimoni-card::before,
@@ -283,4 +295,32 @@ nav ul li a:hover {
 .testimoni-card:hover::after {
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .style-section .style-images {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Mengubah lebar kolom pada layar medium */
+        grid-gap: 15px; /* Mengurangi jarak antar item */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .style-section .style-images {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Mengubah lebar kolom pada layar kecil */
+        grid-gap: 10px; /* Mengurangi jarak antar item */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .style-section .style-images {
+        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); /* Mengubah lebar kolom pada layar sangat kecil */
+        grid-gap: 5px; /* Mengurangi jarak antar item */
+    }
 }
