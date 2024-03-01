@@ -15,5 +15,17 @@ Alphawatch merupakan suatu produk jam tangan yang trendi dan elegan.
 3. Deploy with Github and waiting is done
     ![Screenshot 2024-03-01 200459](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/627a50ab-67d6-4be9-b43d-c6785c055207)
 
-4. 
+4. Select module-2-mhsyaman to deploy
+    ![Screenshot 2024-03-01 200835](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/97e29d2c-9a6f-42fd-9621-725236a74b8f)
+
+5. Fill in the site name as you wish. Here as an example "alphawatchzone" and click button deploy alphawatchzone
+    ![Screenshot 2024-03-01 201257](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/e93501dc-34bf-4be6-873c-caaf2fb8fb2e)
+    ![Screenshot 2024-03-01 201452](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/deab2b19-3d76-4458-b401-0010a1b9cedb)
+
+6. Wait for the deployment to complete.
+    ![Screenshot 2024-03-01 201557](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/7fa0e1fa-3a0c-41c9-a2ef-f749edea310e)
+    ![Screenshot 2024-03-01 201652](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/beafacdd-6e1e-4e68-8762-024b5ee36cfb)
+
+7. Klik link alphawatchzone.netlify.app and deploy website in Netlify is done
+    ![Screenshot 2024-03-01 201749](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/35dbbdcb-1fab-4d1f-a625-f45242b5cc2f)
 
