@@ -29,6 +29,7 @@ Alphawatch is a trendy and elegant watch product.
 7. Klik link [alphawatchzone.netlify.app](https://alphawatchzone.netlify.app/) and deploy website in Netlify is done
     ![Screenshot 2024-03-01 201749](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/35dbbdcb-1fab-4d1f-a625-f45242b5cc2f)
 
+
 ## Documentation of Buy DNS at Niagahoster
 
 1. Login Niagahoster
@@ -49,6 +50,7 @@ Alphawatch is a trendy and elegant watch product.
 
 6. This is the result of buying a domain and I am here buying with the domain my.id
     ![Screenshot 2024-03-01 205357](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/8f488ebc-b974-4b2d-964b-a4ec80cfda2c)
+
 
 ## Documentation on How to Connect Netlify to a Purchased DNS
 
@@ -82,5 +84,5 @@ Alphawatch is a trendy and elegant watch product.
 9. Go back to Netlify to see the Netlify DNS checked status.
     ![Screenshot 2024-03-01 213053](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/7b8a863f-a26a-4590-b91a-1e2aac205722)
 
-10. Click [alphawatchzone.my.id]{http://alphawatchzone.my.id/} and the website has been deployed with the domain that has been purchased.
+10. Click [alphawatchzone.my.id](http://alphawatchzone.my.id/) and the website has been deployed with the domain that has been purchased.
     ![Screenshot 2024-03-01 213300](https://github.com/RevoU-FSSE-4/module-2-mhsyaman/assets/98678219/1071f6a9-429c-40d4-9ee0-c9d89d20e6f4)
